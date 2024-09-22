@@ -12,12 +12,8 @@ import {
 import { useParams } from "next/navigation";
 import React, { useState } from "react";
 
-const Meeting = ({
-	params,
-}: {
-	params: { id: string };
-}) => {
-	const { user, isLoaded } = useUser();
+const Meeting = () => {
+	const { isLoaded } = useUser();
 	const { id } = useParams();
 	const [isSetupComplete, setIsSetupComplete] =
 		useState(false);

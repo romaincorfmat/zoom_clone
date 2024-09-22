@@ -16,7 +16,6 @@ interface MeetingCardProps {
 	buttonText?: string;
 	handleClick: () => void;
 	link: string;
-	buttonText2?: string;
 }
 
 const MeetingCard = ({
@@ -28,7 +27,6 @@ const MeetingCard = ({
 	handleClick,
 	link,
 	buttonText,
-	buttonText2,
 }: MeetingCardProps) => {
 	const { toast } = useToast();
 
