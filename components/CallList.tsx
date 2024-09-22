@@ -71,6 +71,7 @@ const CallList = ({
 				setRecordings(recordings);
 			} catch (error) {
 				toast({ title: "Try again later" });
+				console.log("Error: ", error);
 			}
 		};
 		if (type === "recordings") fetchRecordings();
